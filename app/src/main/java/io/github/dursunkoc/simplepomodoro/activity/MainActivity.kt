@@ -21,7 +21,7 @@ class MainActivity() : AppCompatActivity() {
     private var timeLeft = Constant.DEFAULT_WORK_DURATION_MS
     private lateinit var tvTimer: TextView
     private lateinit var btnStart: Button
-    private lateinit var btnStop: Button
+    private lateinit var btnReset: Button
     private var state:State=State.Pomodoro(1,this)
     private lateinit var ivPomodoroState:ImageView
     private lateinit var tvPomodoroCounter:TextView
@@ -32,7 +32,7 @@ class MainActivity() : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         tvTimer = binding.tvTimer
         btnStart = binding.btnStart
-        btnStop = binding.btnStop
+        btnReset = binding.btnReset
         ivPomodoroState = binding.ivPomodoroState
         tvPomodoroCounter = binding.tvPomodoroCounter
         tvPomodoroTotal = binding.tvPomodoroTotal
@@ -50,8 +50,15 @@ class MainActivity() : AppCompatActivity() {
             }
         }
 
-        btnStop.setOnClickListener {
-            //TODO reset all!
+        btnReset.setOnClickListener {
+            if(isRunning){
+                pauseTimer();
+            }
+            this.state = State.Pomodoro(1,this)
+
+            tvPomodoroTotal.text = getString(R.string.lblTotalPomodoro, TimeUtils.formatMillisecondsMinutesSeconds(0L));
+            tvPomodoroCounter.text = getString(R.string.lblPomodoroCounter, 1);
+            updateTimerText(Constant.DEFAULT_WORK_DURATION_MS)
         }
         setContentView(binding.root)
     }
