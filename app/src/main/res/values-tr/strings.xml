@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimplePomodoro</string>
+    <string name="btnStart">Başlat</string>
+    <string name="btnStop">Başa Al</string>
+    <string name="btnPause">Durdur</string>
+    <string name="stPomodoro">Pomodoro</string>
+    <string name="stShortBreak">Kısa Ara</string>
+    <string name="stLongBreak">Uzun Ara</string>
+    <string name="lblTotalPomodoro">Toplam Pomodoro: %1$s</string>
+    <string name="lblPomodoroCounter">#%1$d</string>
+</resources>

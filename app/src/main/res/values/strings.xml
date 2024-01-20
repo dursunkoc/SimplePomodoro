@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimplePomodoro</string>
+    <string name="btnStart">Start</string>
+    <string name="btnPause">Pause</string>
+    <string name="btnStop">Reset</string>
+    <string name="stPomodoro">Pomodoro</string>
+    <string name="stShortBreak">Short Break</string>
+    <string name="stLongBreak">Long Break</string>
+    <string name="lblTotalPomodoro">Total Pomodoro: %1$s</string>
+    <string name="lblPomodoroCounter">#%1$d</string>
+</resources>

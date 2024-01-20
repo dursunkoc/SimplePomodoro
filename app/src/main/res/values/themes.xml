@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SimplePomodoro" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SimplePomodoro" parent="Base.Theme.SimplePomodoro" />
+    <color name="mainBackground">#B5625F</color>
+    <color name="mainText">#FFFFFFFF</color>
+    <color name="mainBtnBackgroundActive">#FF009688</color>
+    <color name="mainBtnTextActive">#FFFFFFFF</color>
+    <color name="stateActiveColor">#FF5722</color>
+    <color name="stateInActiveColor">#414040</color>
+    <color name="stateActiveText">#FFFFFFFF</color>
+    <color name="stateInactiveText">#88787878</color>
+</resources>

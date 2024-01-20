@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SimplePomodoro" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <color name="mainBackground">#FF5A312F</color>
+    <color name="mainText">#88787878</color>
+    <color name="mainBtnBackgroundActive">#88004844</color>
+    <color name="mainBtnTextActive">#88888888</color>
+    <color name="stateActiveColor">#88FF5722</color>
+    <color name="stateInActiveColor">#88414040</color>
+    <color name="stateActiveText">#FFFFFFFF</color>
+    <color name="stateInactiveText">#88787878</color>
+</resources>
